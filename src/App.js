@@ -7,14 +7,19 @@ import { useEffect, useState } from 'react'
 import LostPage from './pages/LostPage'
 import WinPage from './pages/WinPage'
 
-function App() {
 
+
+function App() {
   const[questions, setQuestions] = useState(null)
   const[answers, setAnswers] = useState(null)
 
 
   useEffect(() => {
       getQuestions();
+      window.addEventListener("popstate", () => {
+        getQuestions();
+    });
+  
   },[]);
  
 

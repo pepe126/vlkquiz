@@ -16,11 +16,11 @@ const Game = (props) => {
         const interval = setInterval(() => {
           updateTime();
         }, 1000);
-
-
+        
         window.addEventListener("popstate", () => {
-            history.push("/");});
-      
+            history.push("/");
+        });
+
         return () => {
           clearInterval(interval);
         };
