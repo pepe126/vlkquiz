@@ -41,7 +41,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route path = "/vlkquiz" exact render = {() => <Home />}/>
+        <Route path = "/" exact render = {() => <Home />}/>
         <Route path = "/istruzioni" render = {() => <Istruzioni /> }/>
         {questions && answers && (<Route path = "/game" render = {() => <Game
           questions = {questions}

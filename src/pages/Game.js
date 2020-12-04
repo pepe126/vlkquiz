@@ -10,9 +10,34 @@ const Game = (props) => {
 
     const history = useHistory()
     const[numeroDomanda, setNumeroDomanda] = useState(0);
+    const [time, setTime] = useState(20)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          updateTime();
+        }, 1000);
 
 
-     function progressQuestion(numeroDomanda){
+        window.addEventListener("popstate", () => {
+            history.push("/");});
+      
+        return () => {
+          clearInterval(interval);
+        };
+      }, [time])
+
+
+    function updateTime () {
+        if(time > 0){
+            const newTime = time-1;
+            setTime(newTime);
+        } else {
+            history.push("/LostPage")
+        }
+    }
+
+
+    function progressQuestion(numeroDomanda){
         setNumeroDomanda(numeroDomanda +1);
      }
 
@@ -24,6 +49,7 @@ const Game = (props) => {
                 history.push("/WinPage")
             } else{
                 progressQuestion(numeroDomanda);
+                setTime(20)
             }
         }else{
             history.push("/LostPage")
@@ -32,6 +58,7 @@ const Game = (props) => {
 
     return(
         <div>
+            <h1>{time}</h1>
             <Infographic
                 numero = {numeroDomanda + 1}
             />
