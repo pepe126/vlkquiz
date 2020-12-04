@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import "../styles/Startupbtn.css"
 
 
 const WinPage = () => {
@@ -7,7 +8,7 @@ const WinPage = () => {
     return(
         <div>
             <h1>HAI VINTO</h1>
-            <Link to = "/"><button>Homepage</button></Link>
+            <Link to = "/"><button className = "btn btn-warning" >Homepage</button></Link>
         </div>
     )
 }

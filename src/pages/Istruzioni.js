@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import "../styles/Startupbtn.css"
 
 
 const Istruzioni = () => {
@@ -13,7 +14,7 @@ const Istruzioni = () => {
                In caso di risposta sbagliata il gioco termina!<br/>
                Si vince in caso si risponda correttamente a tutte e 10 le domande poste.<br/>
             </p>
-            <Link to = "/"><button>Homepage</button></Link>
+            <Link to = "/"><button className = "btn btn-warning" >Homepage</button></Link>
 
         </div>
     )

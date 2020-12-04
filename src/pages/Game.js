@@ -4,6 +4,8 @@ import LostPage from './LostPage'
 import { useHistory } from "react-router-dom"
 import { useEffect, useState } from 'react'
 import Infographic from '../components/Infographic'
+import "../styles/Startupbtn.css"
+
 
 
 const Game = () => {
@@ -21,6 +23,7 @@ const Game = () => {
         }, 1000);
         
         if(time == 21){
+            setTime(20)
             getQuestions();
         }
         
@@ -93,11 +96,11 @@ const Game = () => {
                 numero = {numeroDomanda + 1}
             />
             <h2>{questions[numeroDomanda].question}</h2>
-            <button onClick={giveAnswer} value={answers[numeroDomanda][0]}>{answers[numeroDomanda][0]}</button>
-            <button onClick={giveAnswer} value={answers[numeroDomanda][1]}>{answers[numeroDomanda][1]}</button>
+            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][0]}>{answers[numeroDomanda][0]}</button>
+            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][1]}>{answers[numeroDomanda][1]}</button>
                 <br/>
-            <button onClick={giveAnswer} value={answers[numeroDomanda][2]}>{answers[numeroDomanda][2]}</button>
-            <button onClick={giveAnswer} value={answers[numeroDomanda][3]}>{answers[numeroDomanda][3]}</button>
+            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][2]}>{answers[numeroDomanda][2]}</button>
+            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][3]}>{answers[numeroDomanda][3]}</button>
         
             </div>)}
 

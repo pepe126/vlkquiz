@@ -1,0 +1,21 @@
+.strtbtn{
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 15vh;
+    height: 30vh;
+    width: 30vh;
+    text-decoration: blue;
+    font-size: 5vh;
+    color: white;
+    background-color: rgba(33, 40, 51, 0.6);
+    border: solid white;
+    transition: 0.25s;
+    border-radius: 10%;
+    box-shadow: 5px 10px;
+
+}
+
+.strtbtn:hover{
+    background-color: rgba(10, 29, 56, 0.8);
+    border-radius: 25%;
+}
