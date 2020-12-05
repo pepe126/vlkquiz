@@ -1,0 +1,33 @@
+.section{
+    border-style: solid;
+    border-radius: 2%;
+    border-color: black;
+    background-color: white;
+    word-wrap: normal;
+    display: inline-block; 
+    text-align: center;
+    padding: 5vh;
+}
+
+.smallbtn{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: solid black;
+    transition: 0.25s;
+    border-radius: 10%;
+    box-shadow: 3px 3px 5px 2px;
+}
+
+.smallbtn:hover{
+    background-color: rgb(247, 255, 140);
+}
+
+.risp{
+    height: 10vw;
+    width: 20vw;
+    margin: 3vw;
+}
+
+.lost{
+    border-radius: 5%;
+}

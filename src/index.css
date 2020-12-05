@@ -1,13 +1,14 @@
 body {
   margin: 0;
   width: 95vw;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./styles/pexels-josh-sorenson-1714208.jpg");
-  background-size: fill;
+  background-image: url("./styles/pexels-neo-2653362.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }

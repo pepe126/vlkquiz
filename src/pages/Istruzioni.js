@@ -6,7 +6,7 @@ import "../styles/Startupbtn.css"
 const Istruzioni = () => {
 
     return (
-        <div>
+        <div className="section">
             <h1>ISTRUZIONI</h1>
             <p>Il quiz consiste in 10 domande</p>
             <p>Ogni domanda ha un'unica risposta esatta e un tempo di 20 secondi per rispondere. <br/>
@@ -14,7 +14,7 @@ const Istruzioni = () => {
                In caso di risposta sbagliata il gioco termina!<br/>
                Si vince in caso si risponda correttamente a tutte e 10 le domande poste.<br/>
             </p>
-            <Link to = "/"><button className = "btn btn-warning" >Homepage</button></Link>
+            <Link to = "/"><button className = "smallbtn" >Homepage</button></Link>
 
         </div>
     )

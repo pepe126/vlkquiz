@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="App d-flex align-content-center">
         <Route path = "/" exact render = {() => <Home />}/>
         <Route path = "/istruzioni" render = {() => <Istruzioni /> }/>
         <Route path = "/game" render = {() => <Game/>}/>

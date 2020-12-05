@@ -87,7 +87,7 @@ const Game = () => {
     }
 
     return(
-        <div>
+        <div className="section">
             
             {questions && answers && (<div>
 
@@ -96,11 +96,11 @@ const Game = () => {
                 numero = {numeroDomanda + 1}
             />
             <h2>{questions[numeroDomanda].question}</h2>
-            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][0]}>{answers[numeroDomanda][0]}</button>
-            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][1]}>{answers[numeroDomanda][1]}</button>
+            <button className = "smallbtn risp" onClick={giveAnswer} value={answers[numeroDomanda][0]}>{answers[numeroDomanda][0]}</button>
+            <button className = "smallbtn risp" onClick={giveAnswer} value={answers[numeroDomanda][1]}>{answers[numeroDomanda][1]}</button>
                 <br/>
-            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][2]}>{answers[numeroDomanda][2]}</button>
-            <button className = "btn btn-warning" onClick={giveAnswer} value={answers[numeroDomanda][3]}>{answers[numeroDomanda][3]}</button>
+            <button className = "smallbtn risp" onClick={giveAnswer} value={answers[numeroDomanda][2]}>{answers[numeroDomanda][2]}</button>
+            <button className = "smallbtn risp" onClick={giveAnswer} value={answers[numeroDomanda][3]}>{answers[numeroDomanda][3]}</button>
         
             </div>)}
 

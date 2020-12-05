@@ -7,7 +7,7 @@
     text-decoration: blue;
     font-size: 5vh;
     color: white;
-    background-color: rgba(33, 40, 51, 0.6);
+    background-color: rgba(85, 85, 85, 0.9);
     border: solid white;
     transition: 0.25s;
     border-radius: 10%;
@@ -16,6 +16,5 @@
 }
 
 .strtbtn:hover{
-    background-color: rgba(10, 29, 56, 0.8);
     border-radius: 25%;
 }

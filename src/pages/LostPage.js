@@ -6,9 +6,9 @@ import "../styles/Startupbtn.css"
 const LostPage = () => {
 
     return(
-        <div>
-            <h1>Hai Perso</h1>
-            <Link to = "/"><button className = "btn btn-warning" >Homepage</button></Link>
+        <div className="section lost">
+            <h1>HAI PERSO</h1>
+            <Link to = "/"><button className = "smallbtn" >Homepage</button></Link>
 
         </div>
     )

@@ -6,9 +6,9 @@ import "../styles/Startupbtn.css"
 const WinPage = () => {
 
     return(
-        <div>
+        <div className="section lost">
             <h1>HAI VINTO</h1>
-            <Link to = "/"><button className = "btn btn-warning" >Homepage</button></Link>
+            <Link to = "/"><button className = "smallbtn" >Homepage</button></Link>
         </div>
     )
 }
