@@ -53,7 +53,6 @@ const Game = () => {
         const questionsData = await response.json()
         setQuestions(questionsData.results);
         setAnswers(questionsData.results.map((data) => shuffleArray(data.incorrect_answers.concat(data.correct_answer))));
-        console.log(questionsData.results);
     }
 
 
